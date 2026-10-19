@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Bolla Hamsa Manoja, software developer.">
+    <title>Hamsa Manoja | Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="#home">PORTFOLIO<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="./Bolla_Hamsa_Manoja_CSE.pdf"
+           target="_blank" rel="noopener">Resume</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-toggle"
+                aria-label="Switch color theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+</header>
+
+<main>
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <div class="hero-text reveal">
+            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hello, I'm <span>Hamsa Manoja</span></h1>
+            <h2>I'm a <span id="typing"></span><span class="cursor">|</span></h2>
+            <p class="intro">
+                A Computer Science graduate interested in software development,
+                web technologies, and solving practical problems through code.
+            </p>
+
+            <div class="hero-buttons">
+                <a class="btn primary"
+                   href="./Bolla_Hamsa_Manoja_CSE.pdf"
+                   target="_blank" rel="noopener">
+                    <i class="fas fa-file-alt"></i> View Resume
+                </a>
+                <a class="btn secondary" href="#contact">
+                    Contact Me
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/BollaHamsaManoja" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bolla-hamsa-manoja-a13283267/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:hamsamanojabolla5@gmail.com"
+                   aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image reveal">
+            <div class="image-circle">
+                <img src="Hamsa.jpeg" alt="Portrait of Hamsa Manoja">
+            </div>
+            <div class="floating-tag">
+                <i class="fas fa-code"></i> Learning & Building
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a Computer Science graduate who enjoys building web
+            applications and exploring practical software solutions.
+            My experience includes frontend development, Java, Python,
+            and a deep learning project for plant leaf disease detection.
+            I am eager to learn, improve my coding skills, and contribute
+            to real-world software projects.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+        <p class="eyebrow">WHAT I WORK WITH</p>
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-java"></i><h3>Java</h3></div>
+            <div class="skill-card"><i class="fab fa-python"></i><h3>Python</h3></div>
+            <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML5</h3></div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS3</h3></div>
+            <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+            <div class="skill-card"><i class="fab fa-react"></i><h3>React</h3></div>
+        </div>+-
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+        <p class="eyebrow">WHAT I'VE BUILT</p>
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="filters" aria-label="Filter projects">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai">Deep Learning</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="mern">MERN</button>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card reveal" data-category="ai">
+                <div class="project-icon"><i class="fas fa-leaf"></i></div>
+                <div class="project-content">
+                    <span class="tag">Deep Learning</span>
+                    <h3>Plant Leaf Disease Detection</h3>
+                    <p>
+                        Developed a deep learning application to classify
+                        leaf diseases using MobileNetV2 and EfficientNetB3,
+                        with image preprocessing and transfer learning.
+                    </p>
+                    <p class="tech">Python · TensorFlow · Keras · Streamlit</p>
+                    <a class="project-link"
+                       href="https://github.com/" target="_blank"
+                       rel="noopener">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="project-card reveal" data-category="web">
+                <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="project-content">
+                    <span class="tag">Web Development</span>
+                    <h3>Landing Page, Portfolio & Calculator</h3>
+                    <p>
+                        Built three web projects using HTML, CSS and
+                        JavaScript, practising responsive layouts,
+                        visual design and interactive functionality.
+                    </p>
+                    <p class="tech">HTML5 · CSS3 · JavaScript</p>
+                    <a class="project-link"
+                       href="https://github.com/" target="_blank"
+                       rel="noopener">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="project-card reveal" data-category="mern">
+                <div class="project-icon"><i class="fas fa-ticket-alt"></i></div>
+                <div class="project-content">
+                    <span class="tag">MERN Stack</span>
+                    <h3>Online Movie Ticket Booking</h3>
+                    <p>
+                        Collaborated on a movie booking application featuring
+                        movie listings, user authentication, seat selection
+                        and payment simulation.
+                    </p>
+                    <p class="tech">MongoDB · Express · React · Node.js</p>
+                    <a class="project-link"
+                       href="https://github.com/" target="_blank"
+                       rel="noopener">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2 class="section-title">Have an opportunity?</h2>
+        <p>I'd be happy to connect and discuss software development opportunities.</p>
+        <a class="btn primary"
+           href="mailto:hamsamanojabolla5@gmail.com?subject=Portfolio%20Enquiry">
+            <i class="fas fa-envelope"></i> Email Me
+        </a>
+    </section>
+</main>
+
+<footer>
+    <p>© <span id="year"></span> Bolla Hamsa Manoja. Built with HTML, CSS & JavaScript.</p>
+    <a href="#home" class="back-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</footer>
+
+<script src="Portfolio.js"></script>
+</body>
+</html>
