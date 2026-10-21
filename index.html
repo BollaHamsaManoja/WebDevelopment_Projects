@@ -3,13 +3,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=Portfolio/">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Development Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6fb;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #172554;
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      color: #dbeafe;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(1000px, 92%);
+      margin: 45px auto;
+      flex: 1;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 22px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .card h2 {
+      color: #1d4ed8;
+      margin-bottom: 14px;
+    }
+
+    .card p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    .card a {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 11px 17px;
+      border-radius: 7px;
+    }
+
+    .card a:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #172554;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
-  <p>
-    Opening portfolio...
-    <a href="Portfolio/">Click here if you are not redirected.</a>
-  </p>
+  <header>
+    <h1>My Web Development Projects</h1>
+    <p>
+      A collection of front-end projects built to practise
+      and improve my HTML, CSS, and JavaScript skills.
+    </p>
+  </header>
+
+  <main>
+    <section class="projects">
+
+      <article class="card">
+        <h2>Portfolio Website</h2>
+        <p>
+          Explore my personal portfolio, skills, projects,
+          and professional profile.
+        </p>
+        <a href="./Portfolio/">View Portfolio</a>
+      </article>
+
+      <article class="card">
+        <h2>Landing Page</h2>
+        <p>
+          Explore a landing page demonstrating web layout,
+          styling, responsive design, and interactions.
+        </p>
+        <a href="./LandingPage/">View Landing Page</a>
+      </article>
+
+      <article class="card">
+        <h2>Calculator</h2>
+        <p>
+          Try a simple calculator built using HTML, CSS,
+          and JavaScript.
+        </p>
+        <a href="./Calculator/">Open Calculator</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 | Web Development Practice Projects</p>
+  </footer>
 </body>
 </html>
