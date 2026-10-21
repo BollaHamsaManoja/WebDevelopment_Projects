@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10131f">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="Calculator.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <section class="calculator" aria-label="Calculator">
+            <header class="calculator-header">
+                <div>
+                    <p class="eyebrow">SMART TOOLS</p>
+                    <h1>Calculator</h1>
+                </div>
+                <div class="calculator-icon" aria-hidden="true">＋</div>
+            </header>
+
+            <div class="display">
+                <div id="history" class="history" aria-live="polite"></div>
+                <input
+                    type="text"
+                    id="screen"
+                    value="0"
+                    aria-label="Calculator display"
+                    readonly
+                >
+            </div>
+
+            <div class="keypad">
+                <button class="key utility" data-action="clear">AC</button>
+                <button class="key utility" data-action="delete" aria-label="Delete last character">DEL</button>
+                <button class="key utility" data-action="percent">%</button>
+                <button class="key operator" data-value="/" aria-label="Divide">÷</button>
+
+                <button class="key" data-value="7">7</button>
+                <button class="key" data-value="8">8</button>
+                <button class="key" data-value="9">9</button>
+                <button class="key operator" data-value="*">×</button>
+
+                <button class="key" data-value="4">4</button>
+                <button class="key" data-value="5">5</button>
+                <button class="key" data-value="6">6</button>
+                <button class="key operator" data-value="-">−</button>
+
+                <button class="key" data-value="1">1</button>
+                <button class="key" data-value="2">2</button>
+                <button class="key" data-value="3">3</button>
+                <button class="key operator" data-value="+">+</button>
+
+                <button class="key" data-action="sign" aria-label="Change sign">+/-</button>
+                <button class="key" data-value="0">0</button>
+                <button class="key" data-action="decimal">.</button>
+                <button class="key equals" data-action="equals">=</button>
+            </div>
+
+            <p class="hint">Tip: You can also use your keyboard.</p>
+        </section>
+
+        <footer>Built with HTML, CSS &amp; JavaScript</footer>
+    </main>
+</body>
+</html>
